@@ -1,10 +1,284 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Academic Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+      color: #222;
+      background: #ffffff;
+    }
+
+    .container {
+      width: 88%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
+      background: #fff;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav .name {
+      font-size: 28px;
+      font-weight: bold;
+      color: #111;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      padding: 40px 0;
+    }
+
+    .profile-card {
+      text-align: center;
+    }
+
+    .profile-card img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .profile-card h2 {
+      margin-top: 16px;
+      margin-bottom: 6px;
+      font-size: 26px;
+    }
+
+    .profile-card p {
+      margin: 6px 0;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .links a {
+      display: block;
+      margin: 8px 0;
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .intro h1 {
+      font-size: 34px;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    .intro p {
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+
+    section {
+      padding: 10px 0 24px 0;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .item {
+      margin-bottom: 18px;
+    }
+
+    .item h3 {
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .item p {
+      margin: 4px 0;
+    }
+
+    ul.simple-list {
+      padding-left: 22px;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      margin-top: 30px;
+      padding: 20px 0 40px 0;
+      color: #666;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-card {
+        text-align: left;
+      }
+
+      .profile-card img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello</h1>
-  <p>This is my first webpage.</p>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="name">Your Name</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="hero">
+      <div class="profile-card">
+        <img src="https://via.placeholder.com/220x220.png?text=Your+Photo" alt="Profile Photo" />
+        <h2>Your Name</h2>
+        <p>PhD Student / Research Scholar</p>
+        <p>Department of Computer Science and Engineering</p>
+        <p>Your Institute Name</p>
+
+        <div class="links">
+          <a href="mailto:yourmail@example.com">Email</a>
+          <a href="#">Google Scholar</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="intro" id="about">
+        <h1>About Me</h1>
+        <p>
+          I am a research scholar working in the areas of mathematics, computer science,
+          graph theory, algorithms, and optimization. My research focuses on theoretical
+          and applied problems with an interest in clean mathematical analysis and practical relevance.
+        </p>
+
+        <p>
+          This webpage provides a brief overview of my academic background, experience,
+          publications, and contact information.
+        </p>
+      </div>
+    </div>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="item">
+        <h3>PhD in Computer Science / Mathematics</h3>
+        <p><strong>Your Institute Name</strong></p>
+        <p>2023 – Present</p>
+        <p>Research Area: Graph Theory, Algorithms, Optimization</p>
+      </div>
+
+      <div class="item">
+        <h3>Master’s Degree</h3>
+        <p><strong>Your University Name</strong></p>
+        <p>Year – Year</p>
+      </div>
+
+      <div class="item">
+        <h3>Bachelor’s Degree</h3>
+        <p><strong>Your University Name</strong></p>
+        <p>Year – Year</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="item">
+        <h3>Teaching Assistant</h3>
+        <p><strong>Your Institute Name</strong></p>
+        <p>
+          Assisted in courses related to algorithms, programming, graph theory,
+          linear algebra, or other subjects.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Research Experience</h3>
+        <p>
+          Worked on research problems in graph theory, combinatorics, optimization,
+          machine learning, or related mathematical topics.
+        </p>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul class="simple-list">
+        <li>Author Name(s), “Title of Paper 1,” Journal/Conference, Year.</li>
+        <li>Author Name(s), “Title of Paper 2,” Journal/Conference, Year.</li>
+        <li>Author Name(s), “Title of Paper 3,” Journal/Conference, Year.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> yourmail@example.com</p>
+      <p><strong>Office:</strong> Your Department, Your Institute</p>
+      <p><strong>Address:</strong> City, State, Country</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Your Name. All rights reserved.
+    </div>
+  </footer>
+
 </body>
 </html>
