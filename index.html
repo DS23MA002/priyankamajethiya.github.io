@@ -1,317 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Priyanka Majethiya | Academic Homepage</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.7;
-      color: #222;
-      background: #ffffff;
-    }
-
-    .container {
-  width: 100%;
-  max-width: none;
-  margin: 0;
-  padding: 0 20px;
-}
-
-    .header-container {
-  width: 100%;
-  margin: 0;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-    
-    header {
-      border-bottom: 1px solid #ddd;
-      padding: 18px 0;
-      background: #fff;
-      position: sticky;
-      top: 0;
-    }
-
-    nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-   nav .name {
-  font-size: 28px;
-  font-weight: bold;
-  color: #111;
-  text-align: left;
-}
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 18px;
-      padding: 0;
-      margin: 0;
-      flex-wrap: wrap;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #1a1a1a;
-      font-size: 16px;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-  padding: 40px 0;
-}
-
-  
-
-    .profile-card h2 {
-      margin-top: 16px;
-      margin-bottom: 6px;
-      font-size: 26px;
-    }
-
-    .profile-card p {
-      margin: 6px 0;
-      color: #555;
-      font-size: 15px;
-    }
-
-    .links {
-  margin-top: 14px;
-}
-
-.links p {
-  margin: 0 0 8px 0;
-  color: #333;
-  font-size: 15px;
-}
-
-.links a {
-  color: #003366;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.links a:hover {
-  text-decoration: underline;
-}
-
-    .intro h1 {
-      font-size: 34px;
-      margin-top: 0;
-      margin-bottom: 16px;
-    }
-
-    .intro p {
-      margin-bottom: 16px;
-      font-size: 18px;
-    }
-
-    section {
-      padding: 10px 0 24px 0;
-      border-top: 1px solid #e5e5e5;
-    }
-
-    section h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .item {
-      margin-bottom: 18px;
-    }
-
-    .item h3 {
-      margin-bottom: 5px;
-      font-size: 20px;
-    }
-
-    .item p {
-      margin: 4px 0;
-    }
-
-    ul.simple-list {
-      padding-left: 22px;
-    }
-
-    footer {
-      border-top: 1px solid #ddd;
-      margin-top: 30px;
-      padding: 20px 0 40px 0;
-      color: #666;
-      font-size: 14px;
-      text-align: center;
-    }
-
-  @media (max-width: 800px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  nav ul {
-    gap: 12px;
-  }
-
-  nav .name {
-    text-align: left;
-  }
-}
-
-  nav ul {
-    gap: 12px;
-  }
-
-  nav .name {
-    text-align: left;
-  }
-}
-
-    .profile-card {
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-     
-    }
-  </style>
+  <meta name="description" content="Academic homepage of Priyanka Majethiya, PhD student in Mathematical Sciences at SVNIT.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <div class="header-container">
-      <nav>
-        <div class="name">Priyanka Majethiya</div>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#achievements">Achievements</a></li>
-  <li><a href="#workshops">Workshops & Conferences</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <div class="site-title"><a href="#top">Priyanka Majethiya</a></div>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#workshops">Workshops & Conferences</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  
+  <main class="layout" id="top">
+    <aside class="sidebar">
+      <img src="assets/profile-placeholder.svg" alt="Placeholder portrait for Priyanka Majethiya" class="avatar">
+      <h1>Priyanka Majethiya</h1>
+      <div class="role">PhD Student, Mathematical Sciences</div>
+      <div class="org">Sardar Vallabhbhai National Institute of Technology (SVNIT)</div>
+      <div class="place">Surat, Gujarat, India</div>
 
-
-      <div class="intro" id="about">
-        <h1>About Me</h1>
-        <p>
-       I am Priyanka Majethiya, a PhD student in the Department of Mathematics at Sardar Vallabhbhai National Institute of Technology (SVNIT), working under the guidance of  <a href="https://sites.google.com/view/shivambajpeyi/home" target="_blank">Dr. Shivam Bajpeyi</a>. My research focuses on the approximation properties of neural network operators, as well as the sampling and reconstruction of signals in various function spaces.
-        </p>
-
-        <p>
-          
-        </p>
-      </div>
-    </div>
-
-    <section id="education">
-      <h2>Education</h2>
-
-      <div class="item">
-        <h3>PhD in Mathematical Sciences</h3>
-        <p><strong>Sardar Vallabhbhai National Institute of Technology (SVNIT)</strong></p>
-        <p>Jan 2024 – Present</p>
-        <p>Research Area: Approximation theory, Sampling and reconstruction, Functional Analysis, Neural network operators</p>
-      </div>
-
-      <div class="item">
-        <h3>Master of Science</h3>
-        <p><strong>The Maharaja Sayajirao University of Baroda</strong></p>
-        <p>Aug 2020 – May 2022</p>
-      </div>
-
-      <div class="item">
-        <h3>Bachelor of Science</h3>
-        <p><strong>The Maharaja Sayajirao University of Baroda</strong></p>
-        <p>Jul 2017 – Apr 2020</p>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2>Experience</h2>
-
-      <div class="item">
-        <h3>Junior Research Fellow</h3>
-        <p><strong>Department of Mathematics, IIT Jodhpur</strong></p>
-         <p> Aug 2023 - Dec 2023</p>
-      </div>
-
-       <div class="item">
-        <h3>Lecturer</h3>
-        <p><strong> Department of Mathematics
-                Shri Ramji Ravji Lalan College, Bhuj, Gujarat</strong></p>
-          <p>Dec 2022 - Jul 2023</p>
-      </div>
-
-
-   
-
-    <section id="publications">
-      <h2>Publications</h2>
-      <ul class="simple-list">
-        <li> Priyanka Majethiya and Shivam Bajpeyi. "Modular convergence of semi-discrete neural network operators in Orlicz space. " Journal of Pseudo-Differential Operators and Applications, 16, no. 2 (2025): 27.</li>
+      <ul class="sidebar-links">
+        <li><strong>Email:</strong> <a href="mailto:ds23ma002@amhd.svnit.ac.in">ds23ma002@amhd.svnit.ac.in</a></li>
+        <li><strong>Website:</strong> <a href="https://priyanka-majethiya.com" target="_blank" rel="noopener">priyanka-majethiya.com</a></li>
+        <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?hl=en&user=m8OHx8wAAAAJ" target="_blank" rel="noopener">Profile</a></li>
+        <li><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Priyanka-Majethiya" target="_blank" rel="noopener">Priyanka Majethiya</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/priyanka-majethiya-3678b42a2/" target="_blank" rel="noopener">priyanka-majethiya</a></li>
+        <li><strong>Research Areas:</strong> Sampling and reconstruction, approximation theory, signal and image processing, neural network operators, interpolation operators</li>
+        <li><strong>CV:</strong> <a href="assets/Priyanka_CV.pdf" target="_blank" rel="noopener">Download PDF</a></li>
       </ul>
-    </section>
+    </aside>
 
+    <section class="content">
+      <section class="hero" id="about">
+        <h2 class="page-title">About Me</h2>
+        <p class="lead">I am Priyanka Majethiya, a PhD student in Mathematical Sciences at SVNIT, Surat, working under the guidance of Dr. Shivam Bajpeyi. My research focuses on approximation theory, neural network operators, and the sampling and reconstruction of signals in different function spaces.</p>
+      </section>
 
-      <section id="achievements">
-  <h2>Achievements & Awards</h2>
-  <ul class="simple-list">
-    <li>CSIR-NET JRF (Mathematical Sciences), All India Rank 89, June 2023.</li>
-    <li>GATE (Mathematical Sciences), All India Rank 177, February 2023.</li>
-    <li>Qualified Gujarat State Eligibility Test (GSET) in Mathematical Science, 2022.</li>
-    <li>Qualified Prof. A. R. Rao Mathematics Competition, 2021.</li>
-  </ul>
-</section>
+      <h3 class="section-title" id="education">Education</h3>
+      <div class="section-box">
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">PhD, Mathematical Sciences</div>
+              <div class="item-subtitle">Sardar Vallabhbhai National Institute of Technology (SVNIT)</div>
+            </div>
+            <div class="item-date">Jan 2024 – Present</div>
+          </div>
+          <div class="meta">CGPA: 8.43/10</div>
+          <div class="meta">Supervisor: Dr. Shivam Bajpeyi</div>
+        </div>
 
-<section id="workshops">
-  <h2>Workshops & Conferences</h2>
-  <ul class="simple-list">
-    <li>Presented a poster at the 40th Annual Conference of the Ramanujan Mathematical Society, held at IIIT Delhi, December 18–20, 2025.</li>
-    <li>Workshop in Harmonic Analysis and Operator Theory, IISER Mohali, December 8–13, 2025.</li>
-    <li>Symposium on Operators in Harmonic Analysis, SRM University-AP, Amaravati, November 10–14, 2025.</li>
-    <li>Presented a poster at the Indian Women and Mathematics (IWM) Conference 2025, held at IIT Patna, July 10–12, 2025.</li>
-    <li>High-End Workshop on Mathematical Foundations for AI/ML, IIT Indore, May 27 – June 1, 2024.</li>
-    <li>A Two-Day Workshop on Complex Analysis and its Applications (CAA-2024), February 23–24, 2024.</li>
-    <li>Workshop on Graph Theory, National Level, Muthayammal Engineering College, February 17–18, 2022.</li>
-    <li>Nonlinear Dynamics and Applications, National Level, IIT Indore, February 13–16, 2022.</li>
-    <li>Ganitha Garima, State Level, Department of Mathematics, University of Kerala, November 29 – December 3, 2021.</li>
-    <li>Mini-Course on Approximate Solutions of Operator Equations and Eigenvalue Problems, Prof. B. V. Limaye, National Level, IWM, November 20–21, 2021.</li>
-    <li>The Exam-2021 Workshop, National Level, organized by INYAS, July 19–24, 2021.</li>
-    <li>The MTTS Level-2 Programme, National Level, organized by MTTS, June 11 – July 5, 2021.</li>
-  </ul>
-</section>
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">M.Sc, Mathematical Sciences</div>
+              <div class="item-subtitle">The Maharaja Sayajirao University of Baroda</div>
+            </div>
+            <div class="item-date">Aug 2020 – May 2022</div>
+          </div>
+          <div class="meta">CGPA: 8.72/10</div>
+        </div>
 
-      <p><strong>For more information, please visit:</strong>
-          <a href="https://scholar.google.com/citations?user=m8OHx8wAAAAJ&hl=en">Google Scholar</a>,
-          <a href="https://www.researchgate.net/profile/Priyanka-Majethiya">ResearchGate</a>,
-          <a href="https://www.linkedin.com/in/priyanka-majethiya-3678b42a2/">LinkedIn</a>
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">B.Sc, Mathematical Sciences</div>
+              <div class="item-subtitle">The Maharaja Sayajirao University of Baroda</div>
+            </div>
+            <div class="item-date">Jul 2017 – Apr 2020</div>
+          </div>
+          <div class="meta">CGPA: 8.21/10</div>
+        </div>
       </div>
-      
-    <section id="contact">
-      <h2>Contact</h2>
-      <p><strong>Email:</strong>ds23ma002@amhd.svnit.ac.in</p>
-      <p><strong>Address:</strong> Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat, Gujarat, India</p>
+
+      <h3 class="section-title" id="experience">Experience</h3>
+      <div class="section-box">
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Junior Research Fellow</div>
+              <div class="item-subtitle">Department of Mathematics, IIT Jodhpur</div>
+            </div>
+            <div class="item-date">Aug 2023 – Dec 2023</div>
+          </div>
+          <ul class="clean-list">
+            <li>Project Supervisor: Dr. Punnet Sharma</li>
+            <li>Project: Dynamics of Non-autonomous Schmidt Games</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-header">
+            <div>
+              <div class="item-title">Lecturer</div>
+              <div class="item-subtitle">Department of Mathematics, Shri Ramji Ravji Lalan College, Bhuj, Gujarat</div>
+            </div>
+            <div class="item-date">Dec 2022 – Jul 2023</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title" id="publications">Publications</h3>
+      <div class="pub-list">
+        <article class="pub-card">
+          <h3><a href="https://doi.org/10.1007/s11868-025-00685-8" target="_blank" rel="noopener">Modular convergence of semi-discrete neural network operators in Orlicz space</a></h3>
+          <div class="note">Priyanka Majethiya, Shivam Bajpeyi</div>
+          <div class="note">March 2025</div>
+          <div class="link-row"><span class="pill">Published</span></div>
+        </article>
+
+        <article class="pub-card">
+          <h3><a href="https://arxiv.org/abs/2506.04787" target="_blank" rel="noopener">Approximation of functions in mixed norm spaces</a></h3>
+          <div class="note">Priyanka Majethiya, Shivam Bajpeyi, Dhiraj Patel</div>
+          <div class="note">Accepted for publication in Analysis and Mathematical Physics (Q1)</div>
+          <div class="link-row"><span class="pill">Accepted</span><span class="pill">arXiv</span></div>
+        </article>
+
+        <article class="pub-card">
+          <h3><a href="https://arxiv.org/abs/2509.18740" target="_blank" rel="noopener">Approximation by multivariate neural network operators in mixed norm space: theory and application</a></h3>
+          <div class="note">Priyanka Majethiya, Shivam Bajpeyi</div>
+          <div class="note">Under review</div>
+          <div class="link-row"><span class="pill">Under review</span><span class="pill">arXiv</span></div>
+        </article>
+
+        <article class="pub-card">
+          <h3><a href="https://arxiv.org/abs/2511.02750" target="_blank" rel="noopener">Approximation by Certain Complex Nevai Operators: Theory and Applications</a></h3>
+          <div class="note">Priyanka Majethiya, Shivam Bajpeyi</div>
+          <div class="note">Under review</div>
+          <div class="link-row"><span class="pill">Under review</span><span class="pill">arXiv</span></div>
+        </article>
+
+        <article class="pub-card">
+          <h3>Approximation Capabilities of Gaussian Neural Networks with Applications in Image Processing</h3>
+          <div class="note">Priyanka Majethiya, Mahesh Rajarapu, Shivam Bajpeyi</div>
+          <div class="note">Under review</div>
+          <div class="link-row"><span class="pill">Under review</span></div>
+        </article>
+
+        <article class="pub-card">
+          <h3><a href="https://doi.org/10.13140/RG.2.2.26891.40484" target="_blank" rel="noopener">Convergence of a family of Semi-discrete Deep Neural Network Operators</a></h3>
+          <div class="note">Priyanka Majethiya, Shivam Bajpeyi</div>
+          <div class="note">Preprint / under review</div>
+          <div class="link-row"><span class="pill">Preprint</span></div>
+        </article>
+
+        <article class="pub-card">
+          <h3>Asymptotic Expansion and enhanced function approximation by Semi-discrete Neural Network Operators with applications in signal analysis</h3>
+          <div class="note">Priyanka Majethiya, Shivam Bajpeyi</div>
+          <div class="note">Under review</div>
+          <div class="link-row"><span class="pill">Under review</span></div>
+        </article>
+      </div>
+
+      <div class="grid-two">
+        <div>
+          <h3 class="section-title" id="achievements">Achievements & Awards</h3>
+          <div class="contact-box">
+            <ul class="clean-list">
+              <li>CSIR-NET JRF (Mathematical Sciences) with All India Rank 89 (June 2023)</li>
+              <li>GATE (Mathematical Sciences) with All India Rank 177 (February 2023)</li>
+              <li>Qualified Gujarat State Eligibility Test (GSET) in Mathematical Science (2022)</li>
+              <li>Qualified Prof. A. R. Rao Mathematics Competition (2021)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="section-title">Research Interests</h3>
+          <div class="contact-box">
+            <p>Sampling and reconstruction, approximation theory, signal and image processing, neural network operators, and interpolation operators.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title" id="workshops">Workshops & Conferences</h3>
+      <div class="contact-box">
+        <ul class="clean-list">
+          <li>Presented a poster at the 40th Annual Conference of the Ramanujan Mathematical Society Conference, IIIT Delhi, December 18–20, 2025.</li>
+          <li>Workshop in Harmonic Analysis and Operator Theory, IISER Mohali, December 8–13, 2025.</li>
+          <li>Symposium on Operators in Harmonic Analysis, SRM University-AP, Amaravati, November 10–14, 2025.</li>
+          <li>Presented a poster at the Indian Women and Mathematics (IWM) Conference 2025, IIT Patna, July 10–12, 2025.</li>
+          <li>High-End Workshop on Mathematical Foundations for AI/ML, IIT Indore, May 27 – June 1, 2024.</li>
+          <li>A Two-Day Workshop on Complex Analysis and its Applications (CAA-2024), February 23–24, 2024.</li>
+          <li>Workshop on Graph Theory, National Level, Muthayammal Engineering College, February 17–18, 2022.</li>
+          <li>Nonlinear Dynamics and Applications, National Level, IIT Indore, February 13–16, 2022.</li>
+          <li>Ganitha Garima, State Level, Department of Mathematics, University of Kerala, November 29 – December 3, 2021.</li>
+          <li>Mini-Course on Approximate Solutions of Operator Equations and Eigenvalue Problems, Prof. B. V. Limay, National Level, IWM, November 20–21, 2021.</li>
+          <li>The Exam-2021 Workshop, National Level organized by INYAS, July 19–24, 2021.</li>
+          <li>The MTTS Level-2 Programme, National Level organized by MTTS, June 11 – July 5, 2021.</li>
+        </ul>
+      </div>
+
+      <h3 class="section-title" id="contact">Contact</h3>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:ds23ma002@amhd.svnit.ac.in">ds23ma002@amhd.svnit.ac.in</a></p>
+        <p><strong>Address:</strong> Sardar Vallabhbhai National Institute of Technology (SVNIT), Surat, Gujarat, India</p>
+        <p class="small">Reference contacts:</p>
+        <p><strong>Dr. Shivam Bajpeyi</strong><br>Assistant Professor, Department of Mathematics, SVNIT, Surat<br><a href="mailto:shivambajpeyi@amhd.svnit.ac.in">shivambajpeyi@amhd.svnit.ac.in</a> | +91-76518 80242</p>
+        <p><strong>Prof. Ajay Kumar Shukla</strong><br>Professor, Department of Mathematics, SVNIT, Surat<br><a href="mailto:aks@amhd.svnit.ac.in">aks@amhd.svnit.ac.in</a> | +91-98791 09964</p>
+      </div>
     </section>
   </main>
 
- 
-
+  <footer class="footer">
+    © 2026 Priyanka Majethiya. Ready for GitHub Pages deployment.
+  </footer>
 </body>
 </html>
